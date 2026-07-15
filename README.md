@@ -17,8 +17,10 @@ Não há dependências externas, backend, banco de dados, CDN, npm ou etapa de b
 
 ```text
 index.html   Estrutura semântica da aplicação, tela inicial, mesa, mão, histórico e modais.
-styles.css   Estilo responsivo, tema noturno, cartas, painéis, animações e acessibilidade visual.
+styles.css   Estilo responsivo, tema noturno, cartas centralizadas, painéis, animações e acessibilidade visual.
 script.js    Estado do jogo, catálogos, baralho, regras, IA, renderização, persistência e testes.
+assets/characters/*.svg  Retratos originais dos 16 personagens.
+assets/cards/*.svg       Artes originais das cartas usadas na mão do jogador.
 README.md    Este guia.
 ```
 
@@ -85,4 +87,4 @@ O jogo usa `localStorage` para preferências e estatísticas simples: nome, difi
 
 ## Limitações conhecidas
 
-A interface utiliza modais próprios e IA determinística baseada em heurísticas para manter a aplicação estática e sem dependências. As ilustrações são feitas com CSS, texto e emojis Unicode, sem imagens externas.
+A interface utiliza modais próprios e IA determinística baseada em heurísticas para manter a aplicação estática e sem dependências. As ilustrações são feitas com CSS, texto, emojis Unicode e SVGs locais originais, sem imagens externas.

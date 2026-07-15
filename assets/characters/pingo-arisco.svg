@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Pingo">
+<defs><radialGradient id="g" cx="35%" cy="25%"><stop stop-color="#fff8"/><stop offset="1" stop-color="#ff9b7b"/></radialGradient></defs>
+<rect width="128" height="128" rx="28" fill="#111831"/><circle cx="101" cy="24" r="12" fill="#ffeaa0" opacity=".9"/>
+<path d="M27 102c10-20 64-20 74 0" fill="#0b1024" opacity=".55"/>
+<path d="M31 56l-9-28 29 15M97 56l9-28-29 15" fill="#ff9b7b" stroke="#7d2f25" stroke-width="4"/>
+<circle cx="64" cy="66" r="42" fill="url(#g)" stroke="#7d2f25" stroke-width="4"/>
+<circle cx="49" cy="64" r="6" fill="#10131f"/><circle cx="79" cy="64" r="6" fill="#10131f"/><path d="M58 78h12l-6 6z" fill="#7d2f25"/><path d="M44 84c12 10 28 10 40 0" fill="none" stroke="#7d2f25" stroke-width="4" stroke-linecap="round"/>
+<path d="M21 36h28M15 51h35M20 66h25" stroke="#fff9" stroke-width="6" stroke-linecap="round"/>
+</svg>
