@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 224" role="img" aria-label="Banquete de Sardinha">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#8cc8ff"/><stop offset="1" stop-color="#171225"/></linearGradient></defs>
+<rect x="6" y="6" width="148" height="212" rx="20" fill="url(#bg)" stroke="#fff6" stroke-width="4"/>
+<path d="M18 170c36-20 82-20 124 0v31H18z" fill="#0004"/>
+<g transform="translate(16 34)" fill="#fff" opacity=".95"><path d="M28 67c20-24 48-24 72 0-24 24-52 24-72 0z" fill="#fff"/><path d="M100 67l18-14v28z" fill="#fff"/><circle cx="45" cy="63" r="4" fill="#111"/></g>
+<text x="80" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#fff">Banquete de Sardinha</text>
+<text x="80" y="204" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#fff9">Garras no Telhado</text>
+</svg>

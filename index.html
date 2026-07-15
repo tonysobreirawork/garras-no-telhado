@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garras no Telhado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sky" aria-hidden="true"><span class="moon"></span><span class="stars"></span><span class="buildings"></span></div>
+  <header class="topbar">
+    <h1>Garras no Telhado</h1>
+    <div class="top-actions">
+      <button id="rulesBtn" type="button">Como jogar</button>
+      <button id="historyBtn" type="button">Histórico</button>
+      <button id="settingsBtn" type="button">Configurações</button>
+      <button id="soundBtn" type="button" aria-pressed="false">Som</button>
+      <button id="pauseBtn" type="button" aria-pressed="false">Pausar IA</button>
+      <button id="restartBtn" type="button">Reiniciar</button>
+    </div>
+  </header>
+  <main>
+    <section id="setupScreen" class="setup card-panel" aria-labelledby="setupTitle">
+      <h2 id="setupTitle">Preparar telhado</h2>
+      <label>Seu nome <input id="playerName" maxlength="18" value="Miau"></label>
+      <label>Participantes <select id="playerCount"><option>4</option><option selected>5</option><option>6</option><option>7</option></select></label>
+      <label>Dificuldade <select id="difficulty"><option>Fácil</option><option selected>Normal</option><option>Difícil</option></select></label>
+      <label>Velocidade <select id="speed"><option>Lenta</option><option selected>Normal</option><option>Rápida</option></select></label>
+      <label class="check"><input id="soundToggle" type="checkbox" checked> efeitos sonoros</label>
+      <label>Semente opcional <input id="seedInput" placeholder="ex.: lua-azul"></label>
+      <div class="setup-actions">
+        <button id="startBtn" class="primary" type="button">Iniciar partida</button>
+        <button id="setupRulesBtn" type="button">Como jogar</button>
+        <button id="statsBtn" type="button">Estatísticas</button>
+      </div>
+      <details class="dev"><summary>Área de desenvolvimento</summary><button id="testBtn" type="button">Executar testes</button></details>
+    </section>
+    <section id="gameScreen" class="game hidden" aria-label="Mesa do jogo">
+      <div id="table" class="table" aria-live="polite">
+        <div id="opponents" class="opponents"></div>
+        <div class="center-board card-panel">
+          <div><strong>Fase:</strong> <span id="phaseLabel">SETUP</span></div>
+          <div><strong>Turno:</strong> <span id="activeLabel">-</span></div>
+          <div><strong>Baralho:</strong> <span id="deckCount">0</span> · <strong>Descarte:</strong> <span id="discardCount">0</span></div>
+          <div id="revealed" class="revealed">Nenhuma carta revelada</div>
+        </div>
+        <div id="humanPanel" class="human-panel"></div>
+      </div>
+      <section class="hand-zone card-panel" aria-labelledby="handTitle">
+        <h2 id="handTitle">Sua mão</h2>
+        <div id="privateLog" class="private-log" aria-live="polite"></div>
+        <div id="hand" class="hand" role="list"></div>
+        <div class="controls">
+          <button id="playBtn" class="primary" type="button">Jogar carta</button>
+          <button id="cancelBtn" type="button">Cancelar</button>
+          <button id="discardBtn" type="button">Descartar selecionadas</button>
+          <button id="endTurnBtn" type="button">Encerrar turno</button>
+        </div>
+      </section>
+      <aside id="logPanel" class="log-panel card-panel" aria-live="polite"><h2>Registro público</h2><ol id="publicLog"></ol></aside>
+    </section>
+  </main>
+  <div id="modalLayer" class="modal-layer hidden" role="presentation"></div>
+  <script src="script.js"></script>
+</body>
+</html>
